@@ -4,6 +4,11 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import AppleWatchMockup from '@/components/AppleWatchMockup';
 import { toast } from "sonner";
+import FeaturesSection from '@/components/FeaturesSection';
+import UseCasesSection from '@/components/UseCasesSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
+import FAQSection from '@/components/FAQSection';
+import CTASection from '@/components/CTASection';
 
 const PreLaunchPage: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -41,6 +46,7 @@ const PreLaunchPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-frost-white overflow-hidden">
+      {/* Hero Section */}
       <div className="container px-4 mx-auto py-16 md:py-24">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left space-y-6">
@@ -91,9 +97,39 @@ const PreLaunchPage: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Content Sections */}
+      <FeaturesSection />
+      <UseCasesSection />
+      <TestimonialsSection />
+      <FAQSection />
+      <CTASection />
+
+      {/* Pre-Footer Stats */}
+      <div className="bg-midnight-iris text-white py-16">
+        <div className="container px-4 mx-auto text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+              <div className="text-3xl md:text-4xl font-bold text-quantum-teal mb-2">1,000+</div>
+              <div className="text-sm md:text-base">Waitlist Signups</div>
+            </div>
+            <div>
+              <div className="text-3xl md:text-4xl font-bold text-quantum-teal mb-2">7 Days</div>
+              <div className="text-sm md:text-base">Until Launch</div>
+            </div>
+            <div>
+              <div className="text-3xl md:text-4xl font-bold text-quantum-teal mb-2">4.9/5</div>
+              <div className="text-sm md:text-base">Beta Testing Score</div>
+            </div>
+            <div>
+              <div className="text-3xl md:text-4xl font-bold text-quantum-teal mb-2">24/7</div>
+              <div className="text-sm md:text-base">AI Assistance</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default PreLaunchPage;
-
