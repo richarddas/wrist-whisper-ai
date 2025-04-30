@@ -110,47 +110,47 @@
 
 @layer components {
   .section-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-24;
   }
-  
+
   .heading-xl {
-    @apply text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight;
+    @apply text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1];
   }
-  
+
   .heading-lg {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight;
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight;
   }
-  
+
   .heading-md {
-    @apply text-2xl md:text-3xl font-bold;
+    @apply text-xl sm:text-2xl md:text-3xl font-bold;
   }
-  
+
   .heading-sm {
-    @apply text-xl md:text-2xl font-semibold;
+    @apply text-lg sm:text-xl md:text-2xl font-semibold;
   }
-  
+
   .body-lg {
-    @apply text-lg md:text-xl leading-relaxed;
+    @apply text-base sm:text-lg md:text-xl leading-relaxed;
   }
-  
+
   .body-md {
-    @apply text-base leading-relaxed;
+    @apply text-sm sm:text-base leading-relaxed;
   }
-  
+
   .body-sm {
-    @apply text-sm leading-relaxed;
+    @apply text-xs sm:text-sm leading-relaxed;
   }
-  
+
   .btn-primary {
-    @apply bg-teal hover:bg-teal-light text-white font-medium px-6 py-3 rounded-full transition-all duration-300 inline-flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-1;
+    @apply bg-teal hover:bg-teal-light text-white font-medium px-3 sm:px-6 py-2 sm:py-3 rounded-lg sm:rounded-full transition-all duration-300 inline-flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-1 active:translate-y-0;
   }
-  
+
   .btn-secondary {
-    @apply bg-transparent border border-teal text-teal hover:bg-teal/10 font-medium px-6 py-3 rounded-full transition-all duration-300 inline-flex items-center justify-center;
+    @apply bg-transparent border border-teal text-teal hover:bg-teal/10 font-medium px-4 sm:px-6 py-2 sm:py-3 rounded-full transition-all duration-300 inline-flex items-center justify-center;
   }
 
   .typing-demo {
-    @apply overflow-hidden whitespace-nowrap border-r-4 pr-5 animate-typing animate-blink;
+    @apply overflow-hidden whitespace-nowrap border-r-2 sm:border-r-4 pr-2 sm:pr-5 animate-typing-mobile sm:animate-typing animate-blink max-w-full;
   }
 
   .shimmer-effect {

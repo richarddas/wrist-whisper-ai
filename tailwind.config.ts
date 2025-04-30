@@ -139,12 +139,30 @@ export default {
                         opacity: '0.8'
                     }
                 },
+                'pulse-subtle': {
+                    '0%, 100%': {
+                        transform: 'scale(1)',
+                        opacity: '1'
+                    },
+                    '50%': {
+                        transform: 'scale(1.05)',
+                        opacity: '0.95'
+                    }
+                },
                 'typing': {
                     '0%': {
                         width: '0%',
                     },
                     '100%': {
                         width: '100%',
+                    }
+                },
+                'typing-mobile': {
+                    '0%': {
+                        width: '0%',
+                    },
+                    '100%': {
+                        width: '85%',
                     }
                 },
                 'blink': {
@@ -172,7 +190,9 @@ export default {
                 'fade-in-right': 'fade-in-right 0.6s ease-out',
                 'fade-in-left': 'fade-in-left 0.6s ease-out',
                 'pulse-slow': 'pulse-slow 3s infinite',
+                'pulse-subtle': 'pulse-subtle 2s ease-in-out infinite',
                 'typing': 'typing 3.5s steps(40, end)',
+                'typing-mobile': 'typing-mobile 2.5s steps(20, end)',
                 'blink': 'blink 1s step-end infinite',
                 'shimmer': 'shimmer 8s infinite linear'
 			},
