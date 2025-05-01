@@ -1,9 +1,8 @@
-
-import { useEffect, useState } from 'react';
-import Counter from './Counter';
-import WaitlistForm from './WaitlistForm';
-import { ChevronDown } from 'lucide-react';
-import { useIsMobile } from '@/hooks/use-mobile';
+import { useEffect, useState } from "react";
+import Counter from "./Counter";
+import WaitlistForm from "./WaitlistForm";
+import { ChevronDown } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Hero = () => {
   const [loaded, setLoaded] = useState(false);
@@ -27,20 +26,28 @@ const Hero = () => {
 
       {/* Content overlay */}
       <div className="relative z-10 w-full section-container flex flex-col justify-center items-center text-center">
-        <div className={`max-w-3xl mx-auto space-y-6 md:space-y-8 ${loaded ? 'animate-fade-in' : 'opacity-0'}`}>
+        <div
+          className={`max-w-3xl mx-auto space-y-6 md:space-y-8 ${
+            loaded ? "animate-fade-in" : "opacity-0"
+          }`}
+        >
           <div>
             <h1 className="heading-xl text-white mb-4 md:mb-6 px-1">
               <span className="block mb-1 md:mb-2">wristGPT</span>
               <span className="block bg-clip-text text-transparent bg-teal-gradient text-[80%] sm:text-[85%] leading-tight">
-                The best ai is, the one you have with&nbsp;you
+                GPT on the go.
               </span>
             </h1>
             <p className="body-lg text-silver max-w-xs sm:max-w-sm md:max-w-2xl mx-auto typing-demo">
-              Your assistant on your wrist.
+              The best AI is the one you have with&nbsp;you.
             </p>
           </div>
 
-          <div className={`relative z-10 space-y-4 sm:space-y-5 md:space-y-6 max-w-[92%] sm:max-w-md mx-auto ${loaded ? 'animate-fade-in-delayed' : 'opacity-0'}`}>
+          <div
+            className={`relative z-10 space-y-4 sm:space-y-5 md:space-y-6 max-w-[92%] sm:max-w-md mx-auto ${
+              loaded ? "animate-fade-in-delayed" : "opacity-0"
+            }`}
+          >
             {/* Subtle highlight effect behind the form */}
             <div className="absolute -inset-4 bg-gradient-radial from-teal/10 to-transparent rounded-full blur-xl opacity-70 -z-10"></div>
 
@@ -48,7 +55,12 @@ const Hero = () => {
 
             <div className="flex flex-wrap items-center justify-center gap-1 text-silver/90 text-xs sm:text-sm md:text-base">
               <span>Join</span>
-              <Counter end={4832} prefix="" suffix="+" className="text-white font-bold" />
+              <Counter
+                end={4832}
+                prefix=""
+                suffix="+"
+                className="text-white font-bold"
+              />
               <span>early adopters</span>
             </div>
           </div>
